@@ -1,0 +1,51 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BONK DOGE</title>
+    <style>
+        .image{
+            align-items: center;
+       }
+    </style>
+</head>
+<body>
+    <div class="doge">
+        <h1 style="text-align: center; border-radius: 15px; color: dark blue; border: 4px solid black; padding: 2; background-color: rgb(250, 248, 123); margin: 0%; padding: 0%; "><b> BONK DOGE </b> </h1>
+    </div>
+    <div style="text-align: center;" id = "img"class="image">
+        <img style="width: 60vh; height: 40vh;" src="b1.jpg" alt="">
+    </div>
+     <div style="text-align: center;" class="bonk">
+        <b
+                style="border: 2px solid rgb(255, 255 ,255); padding: 1px; border-radius: 8px; margin: 2px; background-color: rgb(255, 255, 255);">
+            </b>
+        <button id="bonk" onclick="transform()" style="width: 150; background-color: rgb(219, 219, 248);  ">
+            <h3><b>CLICK HERE TO BONK</b></h3>
+        </button>
+    </div>
+    <audio src="bonk.mp3" type="audio/mpeg" ></audio> <br> <BR></BR> <BR></BR>
+  <div>
+    <a></a>
+  </a></div>
+
+<script>
+        let a = 1;
+        function transform() {
+            let image = document.querySelector("img")
+            let butn = document.querySelector("#bonk")
+            let audio = document.querySelector('audio')
+            let butncolor = document.getElementById('bonk')
+            image.src = 'b2.jpg'
+            audio.play()
+            butncolor.style.background = 'rgb(173, 173, 219)'
+            setTimeout(() => {
+                image.src = 'b1.jpg'
+            }, 600);
+            setTimeout(() => {
+                butncolor.style.background = 'rgb(219, 219, 248)'
+            }, 200);
+        }
+</script>
+</body>
+</html>
